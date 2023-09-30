@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Estilos para la sección hero */
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  text-align: center;
+  padding: 410px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilos para el título en la sección hero */
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #c14602;
+  margin: 0;
+}
+
+/* Estilos para la descripción en la sección hero */
+.hero-description {
+  font-size: 20px;
+  color: #000000;
+  margin-top: 10px;
+}
+
+/* Estilos para el botón en la sección hero */
+.hero-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #013bf6;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la sección de Misión y Visión */
+.mission-vision-section {
+  background-color: #f4f4f4; /* Color de fondo de la nueva sección */
+  padding: 40px 0; /* Espaciado superior e inferior */
+  text-align: center;
+}
+
+/* Estilos para las tarjetas de Misión y Visión */
+.mission-vision-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px; /* Separación entre tarjetas */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 50px);
+  display: inline-block;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+
+  /* Transición para efecto hover */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para la segunda tarjeta de Visión a la derecha */
+.mission-vision-card:nth-child(2) {
+  float: right;
+}
+
+/* Estilos para el efecto hover en las tarjetas */
+.mission-vision-card:hover {
+  transform: translateY(-10px);
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px; /* Reducir el padding aún más en pantallas pequeñas */
+  }
+
+  .hero {
+    padding: 200px 0; /* Reducir el padding en la sección hero para pantallas pequeñas */
+  }
+
+  .hero-title {
+    font-size: 28px; /* Reducir el tamaño de fuente para títulos en pantallas pequeñas */
+  }
+
+  .hero-description {
+    font-size: 16px; /* Reducir el tamaño de fuente para descripciones en pantallas pequeñas */
+  }
+
+  .hero-button {
+    font-size: 16px; /* Reducir el tamaño de fuente para botones en pantallas pequeñas */
+  }
+
+  .mission-vision-card {
+    width: calc(100% - 20px); /* Ancho del 100% con margen reducido en pantallas pequeñas */
+  }
+}

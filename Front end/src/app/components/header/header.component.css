@@ -1,0 +1,77 @@
+/* Estilos para el encabezado */
+.header {
+  background-color: #fff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #666;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.nav a:last-child {
+  margin-right: 0;
+}
+
+.nav a:hover {
+  color: #007aff;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-right: 0; /* Eliminar el espacio entre el logotipo y los elementos de navegación en pantallas pequeñas */
+  }
+
+  .logo img {
+    width: 30px; /* Tamaño de logotipo más pequeño en pantallas pequeñas */
+    height: 30px;
+  }
+
+  .logo h1 {
+    font-size: 20px; /* Tamaño de fuente más pequeño para el título en pantallas pequeñas */
+  }
+
+  .nav {
+    flex-direction: column; /* Cambiar la dirección de los elementos de navegación a columna en pantallas pequeñas */
+    align-items: flex-start; /* Alinear los elementos de navegación a la izquierda en pantallas pequeñas */
+  }
+
+  .nav a {
+    margin-right: 3px; /* Eliminar el margen derecho en pantallas pequeñas */
+    margin-bottom: 15px; /* Espaciado más grande entre elementos de navegación en pantallas pequeñas */
+    font-size: 16px; /* Tamaño de fuente más pequeño para elementos de navegación en pantallas pequeñas */
+  }
+}
